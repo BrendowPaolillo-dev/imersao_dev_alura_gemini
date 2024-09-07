@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url('sua-imagem-de-fundo.jpg');
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.buttons {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.last-games {
+  margin: 20px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  text-align: center;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.game-grid figure {
+  display: grid;
+  position: relative;
+  width: 200px;
+  /* Ajuste a largura conforme necessário */
+  height: 300px;
+  /* Ajuste a altura conforme necessário */
+  margin: 10px;
+}
+
+.game-grid figure img {
+  width: 100%;
+  /* Mantém a largura original */
+  height: auto;
+  /* Mantém a proporção original */
+  object-fit: cover;
+  align-self: center;
+  transition: transform 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+.game-grid figure h3 {
+  /* Substitui figcaption por h3 */
+  position: absolute;
+  /* Ajuste a distância da borda inferior */
+  left: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Ajuste a cor de fundo */
+  color: white;
+  /* Ajuste a cor do texto */
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  /* Adiciona transição de opacidade */
+  opacity: 0.8;
+  /* Opacidade inicial */
+}
+
+.game-grid figure:hover img {
+  transform: scale(1.2);
+}
+
+.game-grid figure:hover h3 {
+  /* Adiciona efeito de hover para o h3 */
+  opacity: 1;
+}

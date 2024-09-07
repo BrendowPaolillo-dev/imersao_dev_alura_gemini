@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "Super Mario Bros.",
+    "console": "NES",
+    "ano": 1985,
+    "capa": "images/Super_Mario_Bros._box.png"
+  },
+  {
+    "titulo": "The Legend of Zelda",
+    "console": "NES",
+    "ano": 1986,
+    "capa": "images/The_Legend_of_Zelda_1_capa.png"
+  },
+  {
+    "titulo": "Disney's Aladdin",
+    "console": "SNES",
+    "ano": 1993,
+    "capa": "images/Aladdin.png"
+  }
+]
