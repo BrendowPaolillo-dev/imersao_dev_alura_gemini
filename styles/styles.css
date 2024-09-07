@@ -1,56 +1,99 @@
+@font-face {
+  font-family: 'Pixelada';
+  src: url('/fonts/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: black;
   margin: 0;
   padding: 0;
+  font-family: 'Pixelada', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #000;
 }
 
 header {
-  background-image: url('sua-imagem-de-fundo.jpg');
-  background-size: cover;
   height: 300px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: black;
+  border: 4px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.pacman-image, .cherry-image {
+  margin: 0 30px;
+  position: relative;  
+}
+.redghost-image,
+.yellowghost-image,
+.apple-image{
+  width: 50px;
+}
+.pacman-image {
+  transform: rotate(180deg);
 }
 
 .buttons {
-  background-color: #fff;
+  background-color: black;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   margin: 20px auto;
   text-align: center;
+  border: 4px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
+  border: 4px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Pixelada', sans-serif;
 }
 
 .last-games {
   margin: 20px auto;
   text-align: center;
-  background-color: #fff;
+  background-color: black;
+  color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   margin: 20px auto;
   text-align: center;
+  border: 4px solid blue;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: center;
   justify-items: center;
@@ -60,17 +103,13 @@ button {
   display: grid;
   position: relative;
   width: 200px;
-  /* Ajuste a largura conforme necessário */
   height: 300px;
-  /* Ajuste a altura conforme necessário */
   margin: 10px;
 }
 
 .game-grid figure img {
   width: 100%;
-  /* Mantém a largura original */
   height: auto;
-  /* Mantém a proporção original */
   object-fit: cover;
   align-self: center;
   transition: transform 0.3s ease-in-out;
@@ -79,30 +118,99 @@ button {
 }
 
 .game-grid figure h3 {
-  /* Substitui figcaption por h3 */
   position: absolute;
-  /* Ajuste a distância da borda inferior */
   left: 0;
   right: 0;
   margin-bottom: 10px;
   margin: 0 auto;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Ajuste a cor de fundo */
   color: white;
-  /* Ajuste a cor do texto */
   text-align: center;
   transition: opacity 0.3s ease-in-out;
-  /* Adiciona transição de opacidade */
   opacity: 0.8;
-  /* Opacidade inicial */
 }
+
 
 .game-grid figure:hover img {
   transform: scale(1.2);
 }
 
 .game-grid figure:hover h3 {
-  /* Adiciona efeito de hover para o h3 */
   opacity: 1;
+}
+
+.rodape{
+  border: 4px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 2px;
+  justify-items: center;
+  align-items: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Garante que o popup fique acima de outros elementos */
+}
+
+.popup-content {
+  position: relative; /* Isso garante que o botão de fechar seja posicionado relativo ao popup */
+  background-color: black;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 500px;
+  border: 4px solid blue;
+  padding: 20px;
+  margin-bottom: 2px;
+  display: grid;
+  justify-content: center;
+  overflow-y: auto;
+  max-height: 85vh; /* Define uma altura máxima para o popup */
+}
+
+.popup-image {
+  width: 60%;
+  height: auto;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white; /* Cor do botão */
+}
+
+
+.popup-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Adiciona um espaço abaixo da imagem */
+}
+
+.popup-content::-webkit-scrollbar {
+  width: 8px; /* Largura da barra */
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: rgb(50, 50, 50); /* Cor da área deslizante */
+  border-radius: 10px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+  background-color: black; /* Cor do fundo da barra */
 }

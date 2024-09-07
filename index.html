@@ -10,12 +10,22 @@
 
 <body>
   <header>
+    <img src="images/pacman.png" alt="Pac-Man" class="pacman-image">
     <h1>Minha Biblioteca Retro</h1>
+    <img src="images/cherry.png" alt="Maçã do Pac-Man" class="cherry-image">
   </header>
   <main>
     <div class="buttons">
-      <button>Adicionar Novo Jogo</button>
-      <button>Visualizar Biblioteca Finalizada</button>
+      <button>
+        <img src="images/redghost.png" alt="Pac-Man" class="redghost-image">
+        Adicionar Novo Jogo
+        <img src="images/apple.png" alt="Pac-Man" class="apple-image">
+      </button>
+      <button>
+        <img src="images/apple.png" alt="Pac-Man" class="apple-image">
+        Visualizar Biblioteca Finalizada
+        <img src="images/yellowghost.png" alt="Pac-Man" class="yellowghost-image">
+      </button>
     </div>
     <div class="last-games">
       <h2>Últimos Jogos Finalizados</h2>
@@ -23,6 +33,31 @@
       </div>
     </div>
   </main>
+  <div id="popup" class="popup">
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>Informações do Jogo</h2>
+        <img class="popup-image" src="" alt="Capa do jogo">
+        <p class="popup-title"></p>
+        <p class="popup-console"></p>
+        <p class="popup-ano"></p>
+        <p class="popup-descricao"></p>
+        <p class="popup-wiki">
+          <a class="link-wiki" href="#" target="_blank"></a>
+        </p>
+        <span class="popup-close">&times;</span> </div>
+      </div>
+    </div>
+  </div>
+  <footer class="rodape">
+    <p style="display:flex; justify-content: center; color: white;">&copy; 2024 Site de Brendow. Todos os direitos reservados.</p>
+    <nav>
+      <ul style="display: flex; justify-content: space-evenly; padding: 0px">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://github.com/BrendowPaolillo-dev/imersao_dev_alura_gemini">Github</a></li>
+      </ul>
+    </nav>
+  </footer>
   <script src="scripts/script.js"></script>
 </body>
 

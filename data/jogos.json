@@ -3,18 +3,24 @@
     "titulo": "Super Mario Bros.",
     "console": "NES",
     "ano": 1985,
-    "capa": "images/Super_Mario_Bros._box.png"
+    "capa": "images/Super_Mario_Bros._box.png",
+    "wiki": "https://pt.wikipedia.org/wiki/Super_Mario_Bros.",
+    "descricao":"Super Mario Bros. (スーパーマリオブラザーズ Sūpā Mario Burazāzu?) é um jogo eletrônico de plataforma desenvolvido pela Nintendo Research & Development 4 e publicado pela Nintendo para o Famicom em 1985 no Japão e para o Nintendo Entertainment System (NES) em 1985 e 1987 na América do Norte e Europa, respectivamente. É o sucessor do jogo de arcade Mario Bros., de 1983. Os jogadores controlam Mario, ou seu irmão Luigi no modo multijogador, enquanto viajam pelo Reino Cogumelo para resgatar a Princesa Peach de Bowser. Eles devem percorrer os mundos em uma visão em rolagem lateral, evitando perigos como inimigos e buracos com a ajuda de potencializadores como o Supercogumelo, Flor de Fogo e Superestrela."
   },
   {
     "titulo": "The Legend of Zelda",
     "console": "NES",
     "ano": 1986,
-    "capa": "images/The_Legend_of_Zelda_1_capa.png"
+    "capa": "images/The_Legend_of_Zelda_1_capa.png",
+    "wiki": "https://pt.wikipedia.org/wiki/The_Legend_of_Zelda_(jogo_eletr%C3%B4nico)",
+    "descricao":"The Legend of Zelda, conhecido no Japão como The Legend of Zelda: The Hyrule Fantasy (ゼルダの伝説 THE HYRULE FANTASY Zeruda no Densetsu Za Hairaru Fantajī?) é um jogo eletrônico criado por Shigeru Miyamoto em 1986 para o Nintendo Entertainment System. Situado na terra da fantasia de Hyrule, os centros da trama, um garoto chamado Link, o protagonista jogável, que visa a resgatar a Princesa Zelda do antagonista primário, Ganon, recolhendo os oito fragmentos da Triforce da Sabedoria, um poderoso artefato."
   },
   {
     "titulo": "Disney's Aladdin",
     "console": "SNES",
     "ano": 1993,
-    "capa": "images/Aladdin.png"
+    "capa": "images/Aladdin.png",
+    "wiki": "https://pt.wikipedia.org/wiki/Disney%27s_Aladdin_(Super_Nintendo)",
+    "descricao":"Disney's Aladdin é um jogo eletrônico criado em 1993, baseado em um filme com o mesmo nome, lançado para Super Nintendo, junto com outros jogos de mesmo nome para outras plataformas, que são completamente diferentes, apesar de ter o mesmo tema e enredo. Foi desenvolvido e distribuído pela Capcom."
   }
 ]
