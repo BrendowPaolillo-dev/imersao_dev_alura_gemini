@@ -1,7 +1,7 @@
 # Biblioteca de Jogos Retro - Projeto Imersão Alura Gemini
 
 Este é um projeto desenvolvido durante a **Imersão Alura com o Gemini**, no qual criei uma biblioteca de jogos retro que já zerei. O projeto permite adicionar jogos, visualizar a lista de jogos e acessar detalhes de cada um.
-### 🚀 [Acesse a aplicação aqui](https://imersao-dev-alura-gemini-bebbg8cn5-brendow-paolillos-projects.vercel.app/)
+### 🚀 [Acesse a aplicação aqui](https://imersao-dev-alura-gemini-theta.vercel.app/)
 
 
 ## 🚀 Funcionalidades
